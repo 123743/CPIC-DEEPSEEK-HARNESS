@@ -1,0 +1,37 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write extensions/dsh-workflow-panel/README.md
+/:
+  en: 3289ef85c48ece12
+  zh: eea35acbf18c8ebb
+/workflow-run-panel:
+  en: 2fb66e50dd19f3da
+  zh: ec5fcbd62c0013f2
+/workflow-run-panel/summary:
+  en: a87e1cf6a98175a3
+  zh: 1d5319c2cadb2aac
+/workflow-run-panel/contents:
+  en: fc41dcb259eea137
+  zh: 885c8e92e1173e61
+/workflow-run-panel/activate:
+  en: 91f2a57fbfe1e725
+  zh: b124c9ed40cf184c
+/workflow-run-panel/use-the-panel:
+  en: 5616a4e3b4ec7309
+  zh: ca49e7e4dbb1ef19
+/workflow-run-panel/configure-the-source:
+  en: f0a112096445fa73
+  zh: fdb3021a56af8a56
+/workflow-run-panel/execution-and-storage:
+  en: b70051f8ababf8ad
+  zh: 4e1d48d03321a323
+/workflow-run-panel/verification:
+  en: 3882bbfeb2c90511
+  zh: 6a281fadfbda88a8
+/workflow-run-panel/model-experience:
+  en: 149a40b4ec791018
+  zh: 41e63a3cd369b9fe
+/workflow-run-panel/known-limitations:
+  en: 21425c4f2c819640
+  zh: 8964637e0ee9c0e0

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "tenants": [
+    {
+      "tenantId": "tenant-user1",
+      "externalUserId": "user1",
+      "port": 3081,
+      "dshHome": "D:\\DSH\\runtime\\tenants\\user1\\home",
+      "workspace": "D:\\DSH\\runtime\\tenants\\user1\\workspace"
+    },
+    {
+      "tenantId": "tenant-user2",
+      "externalUserId": "user2",
+      "port": 3082,
+      "dshHome": "D:\\DSH\\runtime\\tenants\\user2\\home",
+      "workspace": "D:\\DSH\\runtime\\tenants\\user2\\workspace",
+      "capabilities": ["team", "ptc", "apply-patch"]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+.panel { position: fixed; top: 50%; left: 50%; width: min(760px, calc(100vw - 32px)); transform: translate(-50%, -50%); max-height: calc(100dvh - 32px); box-sizing: border-box; overflow: auto; padding: 16px; color: var(--dsw-alias-label-primary); }
+.heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.fields { border: 0; padding: 0; margin: 12px 0; display: grid; gap: 12px; min-width: 0; }
+.fields label { display: grid; gap: 6px; }
+.fields select, .fields textarea { font: inherit; color: inherit; background: var(--dsw-alias-bg-layer-1); border: 0.5px solid var(--dsw-alias-border-l2); border-radius: 8px; padding: 8px; min-width: 0; }
+.fields textarea { resize: vertical; font-family: monospace; }
+.pairs { display: grid; gap: 6px; }
+.row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; gap: 6px; }
+.response { white-space: pre-wrap; overflow-wrap: anywhere; user-select: text; }

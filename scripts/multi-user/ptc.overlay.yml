@@ -1,0 +1,32 @@
+# Optional tenant capability: enable PTC execution and apply_patch in every Web preset.
+- id: preset-standard
+  config:
+    plugins:
+      - id: tool-fs
+        config:
+          applyPatch: true
+      - id: tool-executor-native
+        disabled: true
+      - id: tool-executor-ptc
+        name: '@deepseek-ai/dsh-tool-executor-ptc'
+        disabled: false
+- id: preset-ptc
+  config:
+    plugins:
+      - id: tool-fs
+        config:
+          applyPatch: true
+      - id: tool-executor-ptc
+        name: '@deepseek-ai/dsh-tool-executor-ptc'
+        disabled: false
+- id: preset-cordis
+  config:
+    plugins:
+      - id: tool-fs
+        config:
+          applyPatch: true
+      - id: tool-executor-native
+        disabled: true
+      - id: tool-executor-ptc
+        name: '@deepseek-ai/dsh-tool-executor-ptc'
+        disabled: false

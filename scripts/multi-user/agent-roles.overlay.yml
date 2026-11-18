@@ -1,0 +1,8 @@
+# The web profile already supplies native Team services and UI.
+- id: agent-team
+  config:
+    defaultEnabled: true
+- insert:
+    - id: agent-roles
+      name: './node_modules/@delthin/dsh-agent-roles/index.js'
+      config: {}

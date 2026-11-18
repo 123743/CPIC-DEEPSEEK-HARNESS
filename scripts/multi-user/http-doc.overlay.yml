@@ -1,0 +1,10 @@
+# Local multi-user deployment opt-in; kept out of shipped profile bundles.
+# Relative module paths are anchored to this overlay by loadOverlayPatches.
+- insert:
+    - id: gateway-tool-http-doc
+      name: '../../packages/experimental/tool-http-doc/lib/index.js'
+      config:
+        requestTimeoutMs: 30000
+        maxBodyChars: 200000
+    - id: gateway-client-ui-http-doc
+      name: '../../packages/experimental/client-ui-http-doc/lib/index.js'

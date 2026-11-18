@@ -1,0 +1,46 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write scripts/multi-user/README.md
+/static-tenant-instance-manager:
+  en: fdb9db09d190ea5f
+  zh: 16e6889e484621bc
+/static-tenant-instance-manager/configuration-file:
+  en: dee05f9fadc51ae1
+  zh: 47d562a1e7e611bb
+/static-tenant-instance-manager/default-community-plugins:
+  en: 42c7d12735c2a38b
+  zh: 0b6031ff1b8bdcc1
+/static-tenant-instance-manager/validate-configuration:
+  en: 1386ceda003e260a
+  zh: 64fa52591c21ffd6
+/static-tenant-instance-manager/linux-web-deployment:
+  en: 950f53a2512b96b3
+  zh: 2e5fdbe4ce469086
+/static-tenant-instance-manager/windows-web-deployment:
+  en: f0eedfccd7343fcd
+  zh: 5e86916b55cc9c7e
+/static-tenant-instance-manager/manage-instances:
+  en: 67d691ccf50fc035
+  zh: e6cbb54a8d2c5aaa
+/static-tenant-instance-manager/run-the-trusted-header-gateway:
+  en: 4ddc079c31d3a031
+  zh: 70c6dcf8687019ca
+/static-tenant-instance-manager/troubleshoot-a-production-linux-deployment:
+  en: d5602c0bf26ba3fb
+  zh: ef560841a8416b4b
+/static-tenant-instance-manager/troubleshoot-a-production-linux-deployment/xtest2-ticket-validation-reports-invalid-json-or-https-failure:
+  en: dfe0dbb0a26b60b1
+  zh: 894c1cd8cb167fad
+/static-tenant-instance-manager/troubleshoot-a-production-linux-deployment/xtest2-entry-succeeds-but-browser-api-requests-return-403:
+  en: 352c94567c7e96a4
+  zh: 54dfe1f3ea3fa953
+/static-tenant-instance-manager/troubleshoot-a-production-linux-deployment/plugins-skills-cannot-load:
+  en: e034d1375e19e6e5
+  zh: de8b56ffff10196d
+/static-tenant-instance-manager/troubleshoot-a-production-linux-deployment/a-new-user-cannot-close-the-preview-notice-or-create-the-default-workspace:
+  en: a3be7a41409f4336
+  zh: c51b1890207216ed
+/static-tenant-instance-manager/provision-tenants-through-xtest2:
+  en: 4a839606821adca3
+  zh: ad02614d1d883fdc

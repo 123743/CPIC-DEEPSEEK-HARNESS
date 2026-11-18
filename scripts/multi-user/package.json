@@ -1,0 +1,22 @@
+{
+  "name": "dsh-multi-user-plugins",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@michengai/dsh-agency-agents": "1.2.34",
+    "@nanmicoder/dsh-agent-teams": "0.1.30",
+    "@delthin/dsh-agent-roles": "0.6.1",
+    "@deepseek-ai/cordis": "link:../../vendor/cordis",
+    "@deepseek-ai/schemastery": "link:../../vendor/schemastery",
+    "@deepseek-ai/dsh-agent": "link:../../packages/core/agent",
+    "@deepseek-ai/dsh-home-paths": "link:../../packages/util/home-paths",
+    "@deepseek-ai/dsh-llm": "link:../../packages/llm/llm",
+    "@deepseek-ai/dsh-skill": "link:../../packages/skill/skill",
+    "@deepseek-ai/dsh-tool-executor-native": "link:../../packages/core/tool-executor-native",
+    "@deepseek-ai/dsh-tools": "link:../../packages/core/tools",
+    "@deepseek-ai/dsh-session": "link:../../packages/core/session",
+    "@deepseek-ai/dsh-system-prompt": "link:../../packages/core/system-prompt",
+    "@deepseek-ai/dsh-typert-protocol": "link:../../packages/typert/protocol",
+    "@deepseek-ai/dsh-subagent": "link:../../packages/subagent/subagent"
+  }
+}

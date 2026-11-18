@@ -1,0 +1,4 @@
+# Optional tenant capability: apply_patch beside edit.
+- id: tool-fs
+  config:
+    applyPatch: true

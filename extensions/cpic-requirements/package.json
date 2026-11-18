@@ -1,0 +1,45 @@
+{
+  "name": "@cpic/requirements-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "CPICHarness requirement analysis, tenant-local QA projects, reviewed testcase plans, manual execution and quality gates",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./mode": "./mode.js",
+    "./mode/locale/*.json": "./locale/*.json",
+    "./mode/icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "*.js",
+    "static/vditor/",
+    "pipeline.yaml",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "*.md"
+  ],
+  "dependencies": {
+    "yaml": "2.9.1",
+    "zod": "4.4.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node --import ./tests/fixtures/source-loader.mjs --test --experimental-test-isolation=none tests/*.test.js"
+  }
+}

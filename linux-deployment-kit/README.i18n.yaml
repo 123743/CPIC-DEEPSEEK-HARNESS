@@ -1,0 +1,19 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write linux-deployment-kit/README.md
+/local-ubuntu-multi-user-gateway-deployment-kit:
+  en: 844fd8275c571a15
+  zh: 44148cfbe41e3d3a
+/local-ubuntu-multi-user-gateway-deployment-kit/1-build-an-application-upgrade-package:
+  en: b20d4e019fc48cf7
+  zh: 62116514ac69b800
+/local-ubuntu-multi-user-gateway-deployment-kit/2-build-a-full-offline-installation-package:
+  en: c3286f8b8a712be1
+  zh: 34b07807150bacc0
+/local-ubuntu-multi-user-gateway-deployment-kit/3-migrate-and-install-the-multi-user-gateway:
+  en: 190968d497fa5e13
+  zh: d0ad8e86ae5e64ff
+/local-ubuntu-multi-user-gateway-deployment-kit/4-configure-credentials-and-validate:
+  en: 90c0ad03cb5be64c
+  zh: 7620da373e77bc82

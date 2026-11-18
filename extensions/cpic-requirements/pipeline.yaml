@@ -1,0 +1,96 @@
+# Bundled default pipeline for case-design analysis runs. A run snapshots the
+# effective definition at start; later edits only affect new runs.
+version: 2
+name: testcase-generation-pipeline
+mode: serial
+nodes:
+  - id: clarify
+    stage: cleanup
+    kind: generate
+    actor:
+      role: requirement-clarifier
+      skill: requirement-clarification
+      workspace: clarifier
+    judge:
+      role: judge-clarify
+      rule: >-
+        Pass only when every functional statement, condition, exception, numeric limit, table rule
+        and relationship of the snapshot survives in at least one cleaned requirement whose
+        sourceRefs cover its wording; every contradiction, missing required fact or material
+        ambiguity that can change behavior, coverage, preconditions or expected results is listed
+        as one concrete question; no question asks about a rule the snapshot states plainly; and no
+        cleaned requirement, rule or expected outcome is invented beyond the snapshot.
+  - id: extract
+    stage: features
+    kind: generate
+    actor:
+      role: feature-extractor
+      skill: feature-point-extraction
+      workspace: extractor
+    judge:
+      role: judge-extract
+      rule: >-
+        Pass only when every cleaned requirement is linked by at least one feature and every
+        requirementId resolves; each feature names its explicit business rules covering
+        permissions, state transitions, input constraints, calculations and exception handling
+        where the snapshot states them; each sourceRef covers the cited wording; and no API, error
+        code, numeric limit, role or rule is invented beyond the snapshot.
+  - id: outline-gen
+    stage: outline
+    kind: generate
+    actor:
+      role: test-outline-writer
+      skill: test-outline-writing
+      workspace: outline-gen
+    judge:
+      role: judge-outline
+      rule: >-
+        Pass only when every scenario links existing featureIds and every feature is covered by at
+        least one scenario; each scenario states exactly one checkable situation with its
+        prerequisites and cites snapshot lines that support it; and the set includes normal,
+        negative, boundary, permission and state-transition situations wherever the snapshot
+        supports them.
+  - id: outline-review
+    stage: outline
+    kind: review
+    actor:
+      role: test-outline-reviewer
+      skill: test-outline-review
+      workspace: outline-review
+    judge:
+      role: judge-outline-review
+      rule: >-
+        Pass only when the review verdict is earned: every issue names the affected ID, cites the
+        evidence, states the impact and proposes a concrete correction; a passing verdict confirms
+        that each feature is covered by at least one positive scenario plus one boundary or
+        negative scenario wherever the snapshot supports it; and vague findings such as "works
+        correctly" without an ID and evidence make the verdict fail.
+  - id: case-gen
+    stage: testcases
+    kind: generate
+    actor:
+      role: testcase-writer
+      skill: testcase-writing
+      workspace: case-gen
+    judge:
+      role: judge-case
+      rule: >-
+        Pass only when every testcase carries priority, type, preconditions, test data and numbered
+        steps whose every step states an observable expected result; every scenario and feature is
+        covered; scenarioIds and featureIds stay consistent with the committed outline; and no
+        expected result invents a limit, status code or behaviour the snapshot does not state.
+  - id: case-review
+    stage: testcases
+    kind: review
+    actor:
+      role: testcase-reviewer
+      skill: testcase-review
+      workspace: case-review
+    judge:
+      role: judge-case-review
+      rule: >-
+        Pass only when the review verdict is earned: every issue names the affected ID, cites the
+        evidence, states the impact and proposes a concrete correction; a passing verdict confirms
+        every feature point is covered by at least one positive testcase plus one boundary or
+        negative testcase wherever the snapshot supports it; priorities are consistent with the
+        stated risk; and every expected result is observable and derived from the snapshot.

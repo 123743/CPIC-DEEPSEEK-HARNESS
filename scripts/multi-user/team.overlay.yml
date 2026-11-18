@@ -1,0 +1,4 @@
+# Native Team services are supplied by the base profile.
+- id: agent-team
+  config:
+    defaultEnabled: true

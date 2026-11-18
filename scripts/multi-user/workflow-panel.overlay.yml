@@ -1,0 +1,7 @@
+# Workflow run panel deployment for gateway-owned tenant processes only.
+- insert:
+    - id: dsh-workflow-panel
+      name: '../../extensions/dsh-workflow-panel/index.js'
+      config:
+        rootDirectory: !!js process.cwd()
+        maxEvents: 500

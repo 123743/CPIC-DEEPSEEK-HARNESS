@@ -1,0 +1,3 @@
+# Keep the web bundle's resolved Skills Host source. This overlay only targets
+# the shipped row and must not introduce a tenant-cwd package resolution.
+- id: ui-settings-skill-management

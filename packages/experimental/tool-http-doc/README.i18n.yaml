@@ -1,0 +1,88 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/experimental/tool-http-doc/README.md
+/:
+  en: b6857405cc887d33
+  zh: 09bd7e72e1ee5d4e
+/deepseek-ai-dsh-experimental-tool-http-doc:
+  en: 598ae19d230c5b76
+  zh: 6661f56ce5601c82
+/deepseek-ai-dsh-experimental-tool-http-doc/summary:
+  en: 907b695c1fd5c9f1
+  zh: c4cb8c031c0909cc
+/deepseek-ai-dsh-experimental-tool-http-doc/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: 09388d293f9be9cb
+/deepseek-ai-dsh-experimental-tool-http-doc/use-this-package:
+  en: 7e7bc15cccb2f8fe
+  zh: 0dccb348d6b0bd73
+/deepseek-ai-dsh-experimental-tool-http-doc/use-this-package/when-to-choose-it:
+  en: df001ffdf47a7d03
+  zh: fe5751d91655eba2
+/deepseek-ai-dsh-experimental-tool-http-doc/use-this-package/composition:
+  en: 5d87fa057dfdee12
+  zh: 8fe77abfe11e72e5
+/deepseek-ai-dsh-experimental-tool-http-doc/use-this-package/human-command:
+  en: 8a381836f0d4edd5
+  zh: 16089d0d468dbbaf
+/deepseek-ai-dsh-experimental-tool-http-doc/use-this-package/configuration:
+  en: d84359b1d8d12d09
+  zh: 4ca8c28417bb4c1f
+/deepseek-ai-dsh-experimental-tool-http-doc/use-this-package/what-the-model-can-do:
+  en: 77c58ae1d818874a
+  zh: 3201cfdc281e796d
+/deepseek-ai-dsh-experimental-tool-http-doc/use-this-package/failures-and-recovery:
+  en: 137e26283d42623f
+  zh: 28ad86e3df08602e
+/deepseek-ai-dsh-experimental-tool-http-doc/understand-the-implementation:
+  en: 8d94a7381bca3fa9
+  zh: f4bd2866fff6fa8d
+/deepseek-ai-dsh-experimental-tool-http-doc/understand-the-implementation/design-philosophy:
+  en: d918f65222513211
+  zh: 2f96133f41ac1194
+/deepseek-ai-dsh-experimental-tool-http-doc/understand-the-implementation/source-map:
+  en: 762a029dc92cace1
+  zh: cff63161c0cdb3dd
+/deepseek-ai-dsh-experimental-tool-http-doc/understand-the-implementation/operation-flow:
+  en: 3539851bb4ffb55f
+  zh: df555af4115a07ab
+/deepseek-ai-dsh-experimental-tool-http-doc/further-exploration:
+  en: 35d34f861032571e
+  zh: 36dc8948d3f9862f
+/deepseek-ai-dsh-experimental-tool-http-doc/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-experimental-tool-http-doc/model-experience/tool-schemas:
+  en: 3039bc5e7a796b21
+  zh: 6b7a9eaf69c9ea53
+/deepseek-ai-dsh-experimental-tool-http-doc/model-experience/tool-schemas/what-the-model-sees:
+  en: cc0c2a82547b89fe
+  zh: 4c933bb17b308bb0
+/deepseek-ai-dsh-experimental-tool-http-doc/model-experience/tool-schemas/token-effect:
+  en: a223c108f50cb9d7
+  zh: 2a37abe833bad8a4
+/deepseek-ai-dsh-experimental-tool-http-doc/model-experience/tool-schemas/kv-cache-effect:
+  en: c4c8902cae469840
+  zh: 9477247f981b9e7d
+/deepseek-ai-dsh-experimental-tool-http-doc/model-experience/tool-results:
+  en: beaabb79f229692a
+  zh: 8573891441963be4
+/deepseek-ai-dsh-experimental-tool-http-doc/model-experience/tool-results/what-the-model-sees:
+  en: 632b498fa280c7d6
+  zh: 1de0b95a7b10709b
+/deepseek-ai-dsh-experimental-tool-http-doc/model-experience/tool-results/token-effect:
+  en: 10d10a9d2274b292
+  zh: e4a281a8d4ed9e9f
+/deepseek-ai-dsh-experimental-tool-http-doc/model-experience/tool-results/kv-cache-effect:
+  en: 9dbeb5d10d26d110
+  zh: 8e1969bf14f5953d
+/deepseek-ai-dsh-experimental-tool-http-doc/known-limitations-and-deferred-work:
+  en: d7210dea7cf9ed77
+  zh: 6aa2cc30ad874247
+/deepseek-ai-dsh-experimental-tool-http-doc/known-limitations-and-deferred-work/dev-note:
+  en: d2f0d68fe29fb750
+  zh: ddda6b64cbc2006c
+/deepseek-ai-dsh-experimental-tool-http-doc/known-limitations-and-deferred-work/dev-note/future-request-collections:
+  en: dff900839df7eef2
+  zh: cd827adb1a88938a

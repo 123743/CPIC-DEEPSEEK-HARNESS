@@ -1,0 +1,14 @@
+# Optional routes; the standard Web bundle keeps DeepSeek as the default.
+- id: llm-pi-ai
+  config:
+    providers:
+      cpic-openai:
+        displayName: CPIC OpenAI-compatible
+        apiKeyEnv: DSH_MULTI_USER_OPENAI_MODEL_API_KEY
+        api: openai-completions
+        baseURL: !!js process.env.DSH_MULTI_USER_OPENAI_MODEL_BASE_URL
+        models:
+          - id: !!js process.env.DSH_MULTI_USER_OPENAI_MODEL_ID
+            name: CPIC OpenAI-compatible model
+            contextWindow: 32768
+            maxTokens: 2000

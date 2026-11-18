@@ -1,0 +1,7 @@
+# Community AgentTeams is separate from the optional built-in team capability.
+- insert:
+    - id: agent-teams
+      name: './node_modules/@nanmicoder/dsh-agent-teams/lib/index.js'
+      config:
+        stateDir: .agent-teams
+        memberProvider: spawn

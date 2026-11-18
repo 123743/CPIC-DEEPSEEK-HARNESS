@@ -1,0 +1,46 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write extensions/cpic-requirements/README.md
+/:
+  en: 08cd1b14ad056d45
+  zh: 4a90abbfa0874b92
+/cpicharness-requirement-workbench:
+  en: 9852cae61740b77c
+  zh: 4028376eaf73d419
+/cpicharness-requirement-workbench/summary:
+  en: 5b2ecdbb9325e3fe
+  zh: d12c7e4b575c76c0
+/cpicharness-requirement-workbench/contents:
+  en: ef1af6810e38dc4d
+  zh: 81f7021868049ab9
+/cpicharness-requirement-workbench/activate:
+  en: 2ba2292b495ab6f0
+  zh: b8dcd12165e06a7c
+/cpicharness-requirement-workbench/configure-the-source:
+  en: 5997b92fec2f86db
+  zh: c0a0b7c114a31110
+/cpicharness-requirement-workbench/use-the-workbench:
+  en: 7cd52bfa830327ed
+  zh: 61264a2034198a46
+/cpicharness-requirement-workbench/traceability-analysis:
+  en: 7b2bd80038e76271
+  zh: bd4a390f04ab80d6
+/cpicharness-requirement-workbench/case-design-pipeline:
+  en: c85750a113dccae6
+  zh: 8854afcb6a192a9b
+/cpicharness-requirement-workbench/cpic-oa-quality-console:
+  en: 19872b5fc0f10736
+  zh: a9e50c56ee6d69f1
+/cpicharness-requirement-workbench/execution-and-storage:
+  en: 9c899dbe874ae528
+  zh: a716e3e741b4aa7f
+/cpicharness-requirement-workbench/verification:
+  en: e81c0ddfefd1836d
+  zh: da572fb76f7b5f9f
+/cpicharness-requirement-workbench/model-experience:
+  en: e3a788b1ed5e2e32
+  zh: 727a15d385638eb9
+/cpicharness-requirement-workbench/known-limitations:
+  en: ac932f9c8a5dc0d0
+  zh: f8b0e55e89015ae7

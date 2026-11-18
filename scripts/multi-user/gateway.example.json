@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "proxySecret": "REPLACE_WITH_RANDOM_PROXY_SECRET_AT_LEAST_32_BYTES",
+  "cpicApiUrl": "http://127.0.0.1:8080/xtest/api/dsh/internal/cpic",
+  "cpicApiSecret": "REPLACE_WITH_A_RANDOM_SECRET_OF_AT_LEAST_32_BYTES_1234",
+  "openAiChatCompletionsUrl": "http://lf24dmbase-ai-sit.life.cpic.com/v1/chat/completions",
+  "openAiModelId": "codewis-7b",
+  "ticketResolverUrl": "http://127.0.0.1:8080/xtest/api/dsh/internal/jump-tickets/consume",
+  "ticketResolverSecret": "REPLACE_WITH_XTEST_INTERNAL_SECRET_AT_LEAST_32_BYTES",
+  "sessionCookieName": "dsh_gateway_session",
+  "sessionTtlMs": 28800000,
+  "idleTimeoutMs": 900000,
+  "host": "127.0.0.1",
+  "port": 3000,
+  "tenantPortMin": 3081,
+  "tenantPortMax": 3999,
+  "adminHost": "127.0.0.1",
+  "adminPort": 3001,
+  "adminSecret": "REPLACE_WITH_RANDOM_SECRET"
+}

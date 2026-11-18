@@ -1,0 +1,27 @@
+{
+  "name": "@dsh-external/workflow-panel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Dashboard for community workflow runs and CPIC case-design progress with checkpoint retry",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "*.md"
+  ],
+  "dependencies": {
+    "zod": "4.4.3"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "test": "node --import ./tests/fixtures/source-loader.mjs --test --experimental-test-isolation=none tests/*.test.js"
+  }
+}

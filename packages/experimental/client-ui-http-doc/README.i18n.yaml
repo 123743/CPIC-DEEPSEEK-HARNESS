@@ -1,0 +1,34 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/experimental/client-ui-http-doc/README.md
+/:
+  en: 2320134677030cf6
+  zh: 4ba2de0d3e362f28
+/http-request-panel:
+  en: 4d89d1de064dda67
+  zh: 515796da27d25c3c
+/http-request-panel/enable:
+  en: 5bdb38b638e7817c
+  zh: 987acfac021e4996
+/http-request-panel/source-map:
+  en: df6058502aa3b07b
+  zh: 6ee79cabd8e1aa30
+/http-request-panel/model-experience:
+  en: 215e7ba838619b7b
+  zh: 215e7ba838619b7b
+/http-request-panel/model-experience/direct-command-execution:
+  en: f63c1d6567a24e44
+  zh: c110d1684c2f6190
+/http-request-panel/model-experience/direct-command-execution/what-the-model-sees:
+  en: f2237117c73222f3
+  zh: 5d657f510470e715
+/http-request-panel/model-experience/direct-command-execution/token-effect:
+  en: 100285a07e904441
+  zh: bc9a4136fef760d5
+/http-request-panel/model-experience/direct-command-execution/kv-cache-effect:
+  en: e11bbbf9bdb8114e
+  zh: d184c8eac90ebefb
+/http-request-panel/known-limitations-and-deferred-work:
+  en: 917e6464e2e3d070
+  zh: 3f9b023ed5f1c5f3

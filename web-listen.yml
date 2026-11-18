@@ -1,0 +1,11 @@
+# Load with: pnpm dsh web --patch ./web-listen.yml --no-open
+# For Linux network access, replace 127.0.0.1 with a local interface IP.
+# Wildcard addresses (0.0.0.0 and ::) are rejected by the server.
+- id: webserver
+  config:
+    host: 127.0.0.1
+    port: 3080
+    tls: !!js ctx.webStartup.tls
+    compression: gzip
+    compressionLevel: 1
+    compressionThresholdBytes: 1024

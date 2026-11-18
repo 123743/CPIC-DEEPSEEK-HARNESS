@@ -1,0 +1,6 @@
+# Default community experts for gateway-owned tenants; resolve only workspace-local dependencies.
+- insert:
+    - id: agency-agents-remote
+      name: './node_modules/@michengai/dsh-agency-agents/lib/remote.js'
+    - id: agency-agents
+      name: './node_modules/@michengai/dsh-agency-agents/lib/index.js'
