@@ -4,6 +4,7 @@
  */
 
 import { spawn, spawnSync } from 'node:child_process'
+import { existsSync } from 'node:fs'
 import { relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { parseArgs } from 'node:util'
@@ -181,10 +182,13 @@ export function libraryBuildSteps(root: string, faces: 'host' | 'all', mode: Com
     pnpmStep('host-bundle', 'Host bundle', ['exec', 'tsdown', '--config-loader', 'native', '--env.DSH_BUILD_FACE', 'host'], ['host-src']),
   ]
   if (faces === 'host') return host
+  const desktop = existsSync(resolve(root, 'apps/desktop/package.json'))
+    ? [pnpmStep('desktop-bundle', 'Desktop bundle', ['--filter', '@deepseek-ai/dsh-desktop', 'run', 'bundle'], ['host-bundle'])]
+    : []
   return [
     ...host,
-    pnpmStep('desktop-bundle', 'Desktop bundle', ['--filter', '@deepseek-ai/dsh-desktop', 'run', 'bundle'], ['host-bundle']),
-    compilerStep(root, 'client', mode, ['desktop-bundle']),
+    ...desktop,
+    compilerStep(root, 'client', mode, desktop.length === 0 ? ['host-bundle'] : ['desktop-bundle']),
     pnpmStep('client-bundle', 'Client bundle', ['exec', 'tsdown', '--config-loader', 'native', '--env.DSH_BUILD_FACE', 'client'], ['client-src']),
   ]
 }
